@@ -1,0 +1,344 @@
+.container {
+  background: #642B73;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6426E, #642B73);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: calc(100vh - 60px);
+  font-family: "Source Sans Pro", sans-serif;
+  color: #151515;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  /* align-items: center; */
+  justify-content: center;
+  width: auto;
+  height: fit-content;
+}
+.container .slogan {
+  max-width: 600px;
+  padding: 8px 15px;
+  background: #FFFFF3;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 45px 0 #6e2e72;
+}
+.container p {
+  display: block;
+  font-weight: 700;
+  font-size: 3em;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.words {
+  text-align: left;
+  width: 216px;
+  height: 40px;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-animation: changewords 7s infinite;
+          animation: changewords 7s infinite;
+}
+
+.word {
+  color: #DE6449;
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 80px;
+  overflow: hidden;
+  -webkit-animation: changewordfirst 7s infinite;
+          animation: changewordfirst 7s infinite;
+}
+.word:nth-of-type(2) {
+  width: 80px;
+  color: #791E94;
+  -webkit-animation: changewordsecond 7s infinite;
+          animation: changewordsecond 7s infinite;
+}
+.word:nth-of-type(3) {
+  width: 180px;
+  color: #41D3BD;
+  -webkit-animation: changewordthird 7s infinite;
+          animation: changewordthird 7s infinite;
+}
+
+@-webkit-keyframes changewordfirst {
+  0% {
+    width: 160px;
+  }
+  16.5% {
+    width: 160px;
+  }
+  25% {
+    width: 0;
+  }
+  93.75% {
+    width: 0;
+  }
+  100% {
+    width: 160px;
+  }
+}
+
+@keyframes changewordfirst {
+  0% {
+    width: 160px;
+  }
+  16.5% {
+    width: 160px;
+  }
+  25% {
+    width: 0;
+  }
+  93.75% {
+    width: 0;
+  }
+  100% {
+    width: 160px;
+  }
+}
+@-webkit-keyframes changewordsecond {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 0;
+  }
+  33% {
+    width: 160px;
+  }
+  50% {
+    width: 160px;
+  }
+  58.25% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes changewordsecond {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 0;
+  }
+  33% {
+    width: 160px;
+  }
+  50% {
+    width: 160px;
+  }
+  58.25% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes changewordthird {
+  0% {
+    width: 0;
+  }
+  58.25% {
+    width: 0;
+  }
+  66% {
+    width: 118px;
+  }
+  85% {
+    width: 118px;
+  }
+  93.75% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes changewordthird {
+  0% {
+    width: 0;
+  }
+  58.25% {
+    width: 0;
+  }
+  66% {
+    width: 118px;
+  }
+  85% {
+    width: 118px;
+  }
+  93.75% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes changewords {
+  0% {
+    width: 160px;
+  }
+  16.5% {
+    width: 160px;
+  }
+  25% {
+    width: 0;
+  }
+  33% {
+    width: 195px;
+  }
+  50% {
+    width: 195px;
+  }
+  58.25% {
+    width: 0;
+  }
+  66% {
+    width: 118px;
+  }
+  85% {
+    width: 118px;
+  }
+  93.75% {
+    width: 0;
+  }
+  100% {
+    width: 160px;
+  }
+}
+@keyframes changewords {
+  0% {
+    width: 160px;
+  }
+  16.5% {
+    width: 160px;
+  }
+  25% {
+    width: 0;
+  }
+  33% {
+    width: 195px;
+  }
+  50% {
+    width: 195px;
+  }
+  58.25% {
+    width: 0;
+  }
+  66% {
+    width: 118px;
+  }
+  85% {
+    width: 118px;
+  }
+  93.75% {
+    width: 0;
+  }
+  100% {
+    width: 160px;
+  }
+}
+
+
+/* ===============================Paramètres BlockQuote================================== */
+blockquote{
+    display: block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+    
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #666;
+    text-align: justify;
+    
+    /*Borders - (Optional)*/
+    border-left: 15px solid purple;
+    
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+  }
+  
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+    
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:5px;
+  }
+  
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  
+  blockquote a{
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+  }
+  
+  blockquote a:hover{
+   color: #666;
+  }
+  
+  blockquote em{
+    font-style: italic;
+  }
+/* ===========================Fin Paramètres blockQuote====================================== */
+
+/* ================================ Paramètres généraux ============================================= */
+body
+{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#remarque
+{
+    padding: 30px;
+    width: auto;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+#adimaker
+{
+    padding: 30px;
+    width: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+#salles
+{
+    padding: 30px;
+    width: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+
+
+/* ===================================== Fin paramètres généraux ============================================= */
