@@ -320,7 +320,9 @@ body
 {
     padding: 30px;
     width: auto;
-    box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 0.5em;
 }
 
 #adimaker
@@ -328,7 +330,7 @@ body
     padding: 30px;
     width: auto;
     margin-top: 10px;
-    box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
 }
 
 #salles
@@ -336,7 +338,15 @@ body
     padding: 30px;
     width: auto;
     margin-top: 10px;
-    box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+}
+
+#stage
+{
+    padding: 30px;
+    width: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
 }
 
 
