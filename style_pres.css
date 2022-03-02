@@ -62,191 +62,191 @@
           animation: changewordsecond 7s infinite;
 }
 .word:nth-of-type(3) {
-  width: 180px;
+  width: 80px;
   color: #41D3BD;
   -webkit-animation: changewordthird 7s infinite;
           animation: changewordthird 7s infinite;
 }
 
 @-webkit-keyframes changewordfirst {
-  0% {
-    width: 160px;
+    0% {
+      width: 160px;
+    }
+    16.5% {
+      width: 160px;
+    }
+    25% {
+      width: 0;
+    }
+    93.75% {
+      width: 0;
+    }
+    100% {
+      width: 160px;
+    }
   }
-  16.5% {
-    width: 160px;
+  
+  @keyframes changewordfirst {
+    0% {
+      width: 160px;
+    }
+    16.5% {
+      width: 160px;
+    }
+    25% {
+      width: 0;
+    }
+    93.75% {
+      width: 0;
+    }
+    100% {
+      width: 160px;
+    }
   }
-  25% {
-    width: 0;
+  @-webkit-keyframes changewordsecond {
+    0% {
+      width: 0;
+    }
+    25% {
+      width: 0;
+    }
+    33% {
+      width: 195px;
+    }
+    50% {
+      width: 195px;
+    }
+    58.25% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
   }
-  93.75% {
-    width: 0;
+  @keyframes changewordsecond {
+    0% {
+      width: 0;
+    }
+    25% {
+      width: 0;
+    }
+    33% {
+      width: 195px;
+    }
+    50% {
+      width: 195px;
+    }
+    58.25% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
   }
-  100% {
-    width: 160px;
+  @-webkit-keyframes changewordthird {
+    0% {
+      width: 0;
+    }
+    58.25% {
+      width: 0;
+    }
+    66% {
+      width: 118px;
+    }
+    85% {
+      width: 118px;
+    }
+    93.75% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
   }
-}
-
-@keyframes changewordfirst {
-  0% {
-    width: 160px;
+  @keyframes changewordthird {
+    0% {
+      width: 0;
+    }
+    58.25% {
+      width: 0;
+    }
+    66% {
+      width: 118px;
+    }
+    85% {
+      width: 118px;
+    }
+    93.75% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
   }
-  16.5% {
-    width: 160px;
+  @-webkit-keyframes changewords {
+    0% {
+      width: 160px;
+    }
+    16.5% {
+      width: 160px;
+    }
+    25% {
+      width: 0;
+    }
+    33% {
+      width: 195px;
+    }
+    50% {
+      width: 195px;
+    }
+    58.25% {
+      width: 0;
+    }
+    66% {
+      width: 118px;
+    }
+    85% {
+      width: 118px;
+    }
+    93.75% {
+      width: 0;
+    }
+    100% {
+      width: 160px;
+    }
   }
-  25% {
-    width: 0;
-  }
-  93.75% {
-    width: 0;
-  }
-  100% {
-    width: 160px;
-  }
-}
-@-webkit-keyframes changewordsecond {
-  0% {
-    width: 0;
-  }
-  25% {
-    width: 0;
-  }
-  33% {
-    width: 160px;
-  }
-  50% {
-    width: 160px;
-  }
-  58.25% {
-    width: 0;
-  }
-  100% {
-    width: 0;
-  }
-}
-@keyframes changewordsecond {
-  0% {
-    width: 0;
-  }
-  25% {
-    width: 0;
-  }
-  33% {
-    width: 160px;
-  }
-  50% {
-    width: 160px;
-  }
-  58.25% {
-    width: 0;
-  }
-  100% {
-    width: 0;
-  }
-}
-@-webkit-keyframes changewordthird {
-  0% {
-    width: 0;
-  }
-  58.25% {
-    width: 0;
-  }
-  66% {
-    width: 160px;
-  }
-  85% {
-    width: 160px;
-  }
-  93.75% {
-    width: 0;
-  }
-  100% {
-    width: 0;
-  }
-}
-@keyframes changewordthird {
-  0% {
-    width: 0;
-  }
-  58.25% {
-    width: 0;
-  }
-  66% {
-    width: 160px;
-  }
-  85% {
-    width: 160px;
-  }
-  93.75% {
-    width: 0;
-  }
-  100% {
-    width: 0;
-  }
-}
-@-webkit-keyframes changewords {
-  0% {
-    width: 160px;
-  }
-  16.5% {
-    width: 160px;
-  }
-  25% {
-    width: 0;
-  }
-  33% {
-    width: 195px;
-  }
-  50% {
-    width: 195px;
-  }
-  58.25% {
-    width: 0;
-  }
-  66% {
-    width: 118px;
-  }
-  85% {
-    width: 118px;
-  }
-  93.75% {
-    width: 0;
-  }
-  100% {
-    width: 160px;
-  }
-}
-@keyframes changewords {
-  0% {
-    width: 160px;
-  }
-  16.5% {
-    width: 160px;
-  }
-  25% {
-    width: 0;
-  }
-  33% {
-    width: 195px;
-  }
-  50% {
-    width: 195px;
-  }
-  58.25% {
-    width: 0;
-  }
-  66% {
-    width: 118px;
-  }
-  85% {
-    width: 118px;
-  }
-  93.75% {
-    width: 0;
-  }
-  100% {
-    width: 160px;
-  }
-}
+  @keyframes changewords {
+    0% {
+      width: 160px;
+    }
+    16.5% {
+      width: 160px;
+    }
+    25% {
+      width: 0;
+    }
+    33% {
+      width: 195px;
+    }
+    50% {
+      width: 195px;
+    }
+    58.25% {
+      width: 0;
+    }
+    66% {
+      width: 118px;
+    }
+    85% {
+      width: 118px;
+    }
+    93.75% {
+      width: 0;
+    }
+    100% {
+      width: 160px;
+    }
+  }s
 
 
 /* ===============================Paramètres BlockQuote================================== */
