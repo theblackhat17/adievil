@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>RegistrationForm_v7 by Colorlib</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+<script>
+	function SubForm (){
+		$.ajax({
+			url:"https://api.apispreadsheets.com/data/a6ECrssSwvU74CMk/",
+			type:"post",
+			data:$("#myForm").serializeArray(),
+			success: function(){
+				alert("Ton message a bien été envoyé :)")
+			},
+			error: function(){
+				alert("Une coquille s'est glissé dans l'envoit du message :(")
+			}
+		});
+	}
+</script>
+  </head>
+
+  <body>
+	  <a href="/presentation.html"><button id="" style="position: absolute; margin-top: 15px; left: 15px; padding: 10px; text-transform: uppercase; color: white; border: 1px solid white; width: fit-content">RETOUR</button></a>
+	  <a href="/index.html"><button id="" style="position: absolute; margin-top: 15px; right: 15px; padding: 10px; text-transform: uppercase; color: white; border: 1px solid white; width: fit-content; ">Menu PRINCIPAL</button></a>
+    <div class="wrapper">
+      <div class="inner">
+        <form id="myForm">
+          <h3>Prends contact avec nous!</h3>
+          <p>
+            Tu as un message à laisser pour exprimer ta colère ou ta joie par rapport à cette théorie du complot? 
+			<br />Envoi nous un petit DM ;)
+          </p>
+          <label class="form-group">
+            <input type="text" class="form-control" name="nom" required />
+            <span>Ton nom</span>
+            <span class="border"></span>
+          </label>
+          <label class="form-group">
+            <input type="text" class="form-control" name="email" required />
+            <span for="">Adresse Email</span>
+            <span class="border"></span>
+          </label>
+          <label class="form-group">
+            <input type="text" class="form-control" name="message" required></input>
+            <span for="">Message subliminal à laisser</span>
+            <span class="border"></span>
+          </label>
+		</form>
+		<button onclick='SubForm()'>Envoyer<i class="zmdi zmdi-arrow-right"></i></button>
+      </div>
+    </div>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+
